@@ -8,7 +8,7 @@ const travelData = {
                     name: "Sydney, Australia",
                     imageUrl: [
                         "ImageForJSFinalProject/Syndey, Australia.jpeg",
-                        "ImageForJSFinalProject/Syndey2, Australia.jpeg"
+                        "ImageForJSFinalProject/Sydney2, Australia.jpeg"
                     ],
                     description: "Famous for the Opera House, beaches, and vibrant city life.",
                     timeZone: "Australia/Sydney"
@@ -43,7 +43,7 @@ const travelData = {
                     name: "Kyoto, Japan",
                     imageUrl: [
                         "ImageForJSFinalProject/Kyoto, Japan.jpg",
-                        "ImageForJSFinalProject/Kyoto2, Japan.jpg"
+                        "ImageForJSFinalProject/Kyoto2. Japan.jpg"
                     ],
                     description: "Historic temples, gardens, and traditional culture.",
                     timeZone: "Asia/Tokyo"
@@ -106,8 +106,8 @@ const travelData = {
                 {
                     name: "Dubai, UAE",
                     imageUrl: [
-                        "ImageForJSFinalProject/dubai.webp",
-                        "ImageForJSFinalProject/dubai2.jpg"
+                        "ImageForJSFinalProject/Dubai.webp",
+                        "ImageForJSFinalProject/Dubai2.jpg"
                     ],
                     description: "Luxury city with skyscrapers, desert adventures, and shopping.",
                     timeZone: "Asia/Dubai"
@@ -128,7 +128,7 @@ const travelData = {
                 }
             ]
         },
-            {
+        {
             name: "Russia",
             cities: [
                 {
@@ -228,7 +228,8 @@ const travelData = {
         },
     {
             name: "Copacabana Beach",
-            imageUrl: ["ImageForJSFinalProject/Copacabana-beach, Brazil.webp", "ImageForJSFinalProject/Copacabana-beach, Brazil.webp"
+            imageUrl: ["ImageForJSFinalProject/Copacabana-beach, Brazil.webp",
+            "ImageForJSFinalProject/Copacabana-beach2, Brazil.jpg"
             ],
             description: "Iconic beach in Rio de Janeiro."
     }
