@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us — TravelBloom</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30e2d1b3de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ================= LEFT SOCIAL BAR ================= -->
+<div class="side-social">
+
+    <!-- вариант с иконками --
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>-->
+
+    <!-- если хочешь КАРТИНКИ вместо иконок — раскомментируй: -->
+    <a href="#"><img src="ImageForJSFinalProject/twitter.png" alt="twitter"></a>
+    <a href="#"><img src="ImageForJSFinalProject/facebook.png" alt="facebook"></a>
+    <a href="#"><img src="ImageForJSFinalProject/instagram.png" alt="instagram"></a>
+    <a href="#"><img src="ImageForJSFinalProject/youtube.png" alt="youtube"></a>
+    -->
+</div>
+<header class="navbar">
+    <div class="nav-inner container">
+        <a href="index.html" class="logo">TravelBloom</a>
+        <nav id="nav-links" class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
+        </nav>
+        <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="subtitle">
+                Have a question or want a personalized itinerary? Drop us a line!
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="contact-layout">
+
+        <!-- LEFT SIDE (пустое/декор или текст) -->
+        <div class="contact-left">
+            <h2>Let’s talk about your next trip</h2>
+            <p>
+                We help you find destinations that match your style.
+                Fill out the form and we’ll respond soon.
+            </p>
+        </div>
+
+        <!-- RIGHT SIDE (CARD FORM) -->
+        <div class="contact-card">
+
+            <form id="contactForm" class="form">
+
+                <label>
+                    <span>Name</span>
+                    <input required type="text" id="name" placeholder="Your full name" />
+                </label>
+
+                <label>
+                    <span>Email</span>
+                    <input required type="email" id="email" placeholder="you@example.com" />
+                </label>
+
+                <label>
+                    <span>Message</span>
+                    <textarea required id="message" placeholder="Tell us about your dream trip…" rows="5"></textarea>
+                </label>
+
+                <button class="btn primary" type="submit">Send</button>
+
+                <p id="formMsg" class="muted"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© <span id="year"></span> TravelBloom</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('#hamburger')?.addEventListener('click', () => {
+        document.getElementById('nav-links').classList.toggle('open');
+    });
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const msg = document.getElementById('message').value.trim();
+        const status = document.getElementById('formMsg');
+        // Basic validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            status.textContent = "Please enter a valid email address.";
+            return;
+        }
+        if (!name || !msg) {
+            status.textContent = "Please fill out all fields.";
+            return;
+        }
+        status.textContent = "Thanks! Your message has been received. We'll get back to you soon.";
+        (e.target).reset();
+    });
+</script>
+</body>
+</html>

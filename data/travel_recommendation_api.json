@@ -1,0 +1,136 @@
+let travelData = {
+  countries: [
+    {
+      name: "Australia",
+      cities: [
+        {
+          name: "Sydney, Australia",
+          imageUrl: ["ImageForJSFinalProject/Sydney1.jpg", "ImageForJSFinalProject/Sydney2.jpg"],
+          description: "Famous for the Opera House, beaches, and vibrant city life.",
+          timeZone: "Australia/Sydney"
+        },
+        {
+          name: "Melbourne, Australia",
+          imageUrl: ["ImageForJSFinalProject/Melbourne1.jpg", "ImageForJSFinalProject/Melbourne2.jpg"],
+          description: "Cultural hub with amazing food, arts, and neighborhoods.",
+          timeZone: "Australia/Melbourne"
+        }
+      ]
+    },
+    {
+      name: "Japan",
+      cities: [
+        {
+          name: "Tokyo, Japan",
+          imageUrl: ["ImageForJSFinalProject/Tokyo1.jpg", "ImageForJSFinalProject/Tokyo2.jpg"],
+          description: "Bustling metropolis blending tradition and modernity.",
+          timeZone: "Asia/Tokyo"
+        },
+        {
+          name: "Kyoto, Japan",
+          imageUrl: ["ImageForJSFinalProject/Kyoto1.jpg", "ImageForJSFinalProject/Kyoto2.jpg"],
+          description: "Historic temples, gardens, and traditional culture.",
+          timeZone: "Asia/Tokyo"
+        }
+      ]
+    },
+    {
+      name: "Brazil",
+      cities: [
+        {
+          name: "Rio de Janeiro, Brazil",
+          imageUrl: ["ImageForJSFinalProject/Rio1.jpg", "ImageForJSFinalProject/Rio2.jpg"],
+          description: "Iconic beaches, carnival, and Christ the Redeemer.",
+          timeZone: "America/Sao_Paulo"
+        },
+        {
+          name: "São Paulo, Brazil",
+          imageUrl: ["ImageForJSFinalProject/SaoPaulo1.jpg", "ImageForJSFinalProject/SaoPaulo2.jpg"],
+          description: "Financial hub with diverse culture, arts, and nightlife.",
+          timeZone: "America/Sao_Paulo"
+        },
+        {
+          name: "Copacabana Beach, Brazil",
+          imageUrl: ["ImageForJSFinalProject/Copacabana1.jpg", "ImageForJSFinalProject/Copacabana2.jpg"],
+          description: "Famous beach with vibrant atmosphere and scenic views.",
+          timeZone: "America/Sao_Paulo"
+        }
+      ]
+    },
+    {
+      name: "Cambodia",
+      cities: [
+        {
+          name: "Angkor Wat, Cambodia",
+          imageUrl: ["ImageForJSFinalProject/Angkor1.jpg", "ImageForJSFinalProject/Angkor2.jpg"],
+          description: "UNESCO World Heritage site, largest religious monument.",
+          timeZone: "Asia/Phnom_Penh"
+        }
+      ]
+    },
+    {
+      name: "India",
+      cities: [
+        {
+          name: "Taj Mahal, India",
+          imageUrl: ["ImageForJSFinalProject/TajMahal1.jpg", "ImageForJSFinalProject/TajMahal2.jpg"],
+          description: "Iconic symbol of love and masterpiece of Mughal architecture.",
+          timeZone: "Asia/Kolkata"
+        }
+      ]
+    },
+    {
+      name: "China",
+      cities: [
+        {
+          name: "Shenzhen, China",
+          imageUrl: ["ImageForJSFinalProject/Shenzhen1.jpg", "ImageForJSFinalProject/Shenzhen2.jpg"],
+          description: "Modern metropolis known for technology and vibrant economy.",
+          timeZone: "Asia/Shanghai"
+        }
+      ]
+    },
+    {
+      name: "Dubai",
+      cities: [
+        {
+          name: "Dubai, UAE",
+          imageUrl: ["ImageForJSFinalProject/Dubai1.jpg", "ImageForJSFinalProject/Dubai2.jpg"],
+          description: "Luxury city with skyscrapers, desert adventures, and shopping.",
+          timeZone: "Asia/Dubai"
+        }
+      ]
+    }
+  ],
+  temples: [
+    {
+      name: "Borobudur",
+      imageUrl: ["ImageForJSFinalProject/Borobudur1.jpg", "ImageForJSFinalProject/Borobudur2.jpg"],
+      description: "The world's largest Buddhist temple."
+    },
+    {
+      name: "Taj Mahal",
+      imageUrl: ["ImageForJSFinalProject/TajMahal1.jpg", "ImageForJSFinalProject/TajMahal2.jpg"],
+      description: "One of the most famous monuments in the world."
+    },
+    {
+      name: "Angkor Wat",
+      imageUrl: ["ImageForJSFinalProject/Angkor1.jpg", "ImageForJSFinalProject/Angkor2.jpg"],
+      description: "Largest religious monument in the world, UNESCO site."
+    }
+  ],
+  beaches: [
+    {
+      name: "Bora Bora",
+      imageUrl: ["ImageForJSFinalProject/Beach1.jpg", "ImageForJSFinalProject/Beach2.jpg"],
+      description: "Crystal-clear water and luxury resorts."
+    },
+    {
+      name: "Copacabana Beach",
+      imageUrl: ["ImageForJSFinalProject/Copacabana1.jpg", "ImageForJSFinalProject/Copacabana2.jpg"],
+      description: "Iconic beach in Rio de Janeiro."
+    }
+  ]
+};
+
+console.log("JSON loaded:", travelData);
