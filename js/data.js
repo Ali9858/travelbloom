@@ -128,7 +128,40 @@ const travelData = {
                 }
             ]
         },
+            {
+            name: "Russia",
+            cities: [
+                {
+                    name: "Moscow, Russia",
+                    imageUrl: [
+                        "ImageForJSFinalProject/Moscow, Russian.jpg",
+                        "ImageForJSFinalProject/Moscow, Russian.webp"
+                    ],
+                    description: "Capital of Russia known for Red Square, Kremlin, and rich history.",
+                    timeZone: "Europe/Moscow"
+                },
 
+                {
+                    name: "Saint Petersburg, Russia",
+                    imageUrl: [
+                        "ImageForJSFinalProject/Saint-Peterburg, Russian.jpg",
+                        "ImageForJSFinalProject/Saint-Peterburg2, Russian.jpg"
+                    ],
+                    description: "Cultural capital of Russia with canals and historic architecture.",
+                    timeZone: "Europe/Moscow"
+                },
+
+                {
+                    name: "Kazan, Russia",
+                    imageUrl: [
+                        "ImageForJSFinalProject/Kazan, Rissian.png",
+                        "ImageForJSFinalProject/Kazan, Russian.jpg"
+                    ],
+                    description: "City where East meets West, known for the Kazan Kremlin.",
+                    timeZone: "Europe/Moscow"
+                }
+            ]
+        },
         {
             name: "Kazakhstan",
             cities: [
